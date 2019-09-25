@@ -1,13 +1,80 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  #floor-plan {
+      display: grid;
+      grid-template-columns:  1fr 1fr 1fr 1fr .5fr .5fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "bd1 bd1 lv lv ov sk"
+        "bd1 bd1 lv lv kt kt"
+        "fb  fb  lv lv kt kt"
+        "bd2 bd2 hb bd3 bd3 bd3"
+        "bd2 bd2 hb bd3 bd3 bd3";
+    
+  }
+#bed-1 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-area: bd1;
+    background-color: rgb(43, 113,136);
+  }
+#bed-2 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-area: bd2;
+    background-color: rgb(43, 113,136);
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+#bed-3 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-area: bd3;
+    background-color: rgb(43, 113,136);
+}
+#living-room { 
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-area: lv;
+    background-color: rgb(189, 155, 102);
+}
+#bath-half {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-area: hb;
+    background-color: rgb(114,136,49);
+}
+#kitchen{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-area: kt;
+}
+#sink{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-area:sk;
+}
+#oven{    
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-area:ov;
+}
+#bath-full{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-area:fb;
 }
