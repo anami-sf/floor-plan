@@ -9,12 +9,12 @@ function FloorPlan(props) {
   return (
       <div id="floor-plan">
         <Kitchen />
-        <Bath size="Full "/>
+        <Bath size="Full" />
         <LivingRoom />
         <Bedroom bNum='1' />
         <Bedroom bNum='2' />
         <Bedroom bNum='3' />
-        <Bath size="Half "/>
+        <Bath size="Half" />
       </div>
 
   );

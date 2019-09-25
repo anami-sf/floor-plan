@@ -1,9 +1,12 @@
 import React from 'react';
 
+
 function Bath({size}) {
   return (
-    
-        <h1 id={`bath-${size}`}>{size} Bath</h1>
+    <div id={`bath-${size}`}>
+        <h1>{size} Bath</h1>
+    </div>
+        
     
   );
 }

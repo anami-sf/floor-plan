@@ -6,7 +6,9 @@ import Sink from './Sink';
 function Kitchen(props) {
   return (
       <>
-        <h1 id="kitchen">Kitchen</h1>
+        <div id="kitchen">
+            <h1>Kitchen</h1>
+        </div>
         <Oven />
         <Sink />
       </>

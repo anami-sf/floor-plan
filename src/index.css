@@ -1,4 +1,15 @@
+  body {
+      margin: 0;
+      height: 100vh;
+  }
+
+  #root {
+      margin: 0;
+      height: 100vh;
+  }
+  
   #floor-plan {
+      height: 100%;
       display: grid;
       grid-template-columns:  1fr 1fr 1fr 1fr .5fr .5fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -42,8 +53,9 @@
     grid-area: lv;
     background-color: rgb(189, 155, 102);
 }
-#bath-half {
+#bath-Half {
     display: flex;
+    height: 100%;
     align-content: center;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -56,6 +68,7 @@
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     grid-area: kt;
+    background-color: rgb(245, 164, 58)
 }
 #sink{
     display: flex;
@@ -63,18 +76,21 @@
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     grid-area:sk;
+    background-color: rgb(147, 86, 19)
 }
-#oven{    
+#oven {    
     display: flex;
     align-content: center;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     grid-area:ov;
+    background-color: rgb(201, 71, 22)
 }
-#bath-full{
+#bath-Full {
     display: flex;
     align-content: center;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     grid-area:fb;
+    background-color: rgb(114,136,49)
 }
